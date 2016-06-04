@@ -1,0 +1,5 @@
+Class,Hit Die,Saving Thow 1,Saving Thow 2,Known Cantrips,Known 1st,Armor Proficiencies,Weapon Proficiencies,Tools Proficiencies,Ability 1,Ability 2
+Cleric,d8,Wisdom,Charisma,3,2,,,,,
+Fighter,d10,Strength,Consitution,0,0,All,"Simple weapons, matrial weapons",,Fighting Style,Second Wind
+Rouge,d8,Intelligence,Dexterity,0,0,,,,,
+Wizard,d6,Intelligence,Wisdom,3,2,,,,,
