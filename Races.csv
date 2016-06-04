@@ -1,0 +1,9 @@
+Race,Subrace,Strength,Dexterity,Consitution,Intelligence,Wisdom,Charisma,Dark Vision,Speed,Lauange,Ablity 1,Ablity 2,Ablity 3,Ablity 4,Ablity 5,Ablity 6
+Human,Normal,1,1,1,1,1,1,No,30,Other,,,,,,
+Human,Variant,,,,,,,No,30,Other,,,,,,
+Halfing,Lightfoot,,2,,,1,,No,25,Halfing,Lucky,Brave,Halfing Nimbleness,Natural Stealthy,,
+Halfing,Stout,,2,1,,,,No,25,Halfing,Lucky,Brave,Halfing Nimbleness,Stout Resilence,,
+Elf,High,,2,,1,,,Yes,30,Elvish,Keen Senses,Fey Ancestry,Trance,Elf Weapon Training,Cantrip,Extra Language
+Elf,Wood,,2,,,1,,Yes,35,Elvish,Keen Senses,Fey Ancestry,Trance,Elf Weapon Training,Fleet of Foot,Mask of the Wild
+Dawf,Hill,,,2,,,,Yes,25,Dwarvish,Dwarven Resilience,Dwarven Combat Training,Tool Proficiency,Stonecunning,Dwarven Toughness,
+Dawf,Mountain,,,2,,,,Yes,25,Dwarvish,Dwarven Resilience,Dwarven Combat Training,Tool Proficiency,Stonecunning,Dwarven Armor Training,
