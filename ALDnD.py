@@ -20,15 +20,15 @@ with open("Races.csv") as csvRace:
                 dataRaces[header].append(value)
             except KeyError:
                 dataRaces[header]=[value]
-with open("raceAbilities.csv") as csvRace:
+with open("Abilities.csv") as csvRace:
     reader = csv.DictReader(csvRace)
-    dataRacesAbilities = {}
+    dataAbilities = {}
     for row in reader:
         for header, value in row.items():
             try:
-                dataRacesAbilties[header].append(value)
+                dataAbilities[header].append(value)
             except KeyError:
-                dataRacesAbilties[header]=[value]
+                dataAbilities[header]=[value]
 abilityCount = len(dataRaces)
 raceCount = len(dataRaces['Race'])
 raceNumber = dataRaces['Race'].index(playerRace)
