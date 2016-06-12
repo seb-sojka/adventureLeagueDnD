@@ -54,6 +54,3 @@ for i in range(10,abilityCount):
         break
     abilities.append(dataRaces["Ability " + str(count)][raceNumber])       
 abilitiesDescription = []
-for i in range(0,len[abilities])
-    raceAbilityDesctriptionNumber = dataRaces
-    dataRacesAbilties
