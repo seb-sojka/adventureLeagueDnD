@@ -9,21 +9,48 @@ dexScore = abilityScores[2]
 intScore = abilityScores[3]
 wisScore = abilityScores[4]
 chaScore = abilityScores[5]
-playerRace = "Normal Human"
+playerRace = "Variant Human"
 playerClass = "Fighter"
 with open("Races.csv") as csvRace:
     reader = csv.DictReader(csvRace)
-    data ={}
+    dataRaces = {}
     for row in reader:
         for header, value in row.items():
             try:
-                data[header].append(value)
+                dataRaces[header].append(value)
             except KeyError:
-                data[header]=[value]
-raceNumber = data['Race'].index(playerRace)
-strScore= strScore+int(data['Strength'][raceNumber])
-conScore= conScore+int(data['Consitution'][raceNumber])
-dexScore= dexScore+int(data['Dexterity'][raceNumber])
-intScore= intScore+int(data['Intelligence'][raceNumber])
-wisScore = wisScore+int(data['Wisdom'][raceNumber])
-chaScore = chaScore +int(data['Charisma'][raceNumber])
+                dataRaces[header]=[value]
+with open("raceAbilities.csv") as csvRace:
+    reader = csv.DictReader(csvRace)
+    dataRacesAbilities = {}
+    for row in reader:
+        for header, value in row.items():
+            try:
+                dataRacesAbilties[header].append(value)
+            except KeyError:
+                dataRacesAbilties[header]=[value]
+abilityCount = len(dataRaces)
+raceCount = len(dataRaces['Race'])
+raceNumber = dataRaces['Race'].index(playerRace)
+strScore= strScore+int(dataRaces['Strength'][raceNumber])
+conScore= conScore+int(dataRaces['Consitution'][raceNumber])
+dexScore= dexScore+int(dataRaces['Dexterity'][raceNumber])
+intScore= intScore+int(dataRaces['Intelligence'][raceNumber])
+wisScore = wisScore+int(dataRaces['Wisdom'][raceNumber])
+chaScore = chaScore +int(dataRaces['Charisma'][raceNumber])
+conMod = int((conScore-10)/2)
+chaMod = int((chaScore-10)/2)
+dexMod = int((dexScore-10)/2)
+intMod = int((intScore-10)/2)
+wisMod = int((wisScore-10)/2)
+strMod = int((wisScore-10)/2)
+languages = []
+languages.append(dataRaces['Language'][raceNumber])
+abilities = []
+count = 0
+for i in range(10,abilityCount):
+    count = count + 1
+    if dataRaces["Ability " + str(count)][raceNumber] =='':
+        break
+    abilities.append(dataRaces["Ability " + str(count)][raceNumber])       
+abilitiesDescription = []

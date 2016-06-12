@@ -1,9 +1,9 @@
-Race,Strength,Dexterity,Consitution,Intelligence,Wisdom,Charisma,Dark Vision,Speed,Lauange,Ablity 1,Ablity 2,Ablity 3,Ablity 4,Ablity 5,Ablity 6
+Race,Strength,Dexterity,Consitution,Intelligence,Wisdom,Charisma,Dark Vision,Speed,Language,Ability 1,Ability 2,Ability 3,Ability 4,Ability 5,Ability 6
 Normal Human,1,1,1,1,1,1,No,30,Other,,,,,,
-Variant Human,,,,,,,No,30,Other,Skills,Feat,,,,
-Lightfoot Halfing,,2,,,1,,No,25,Halfing,Lucky,Brave,Halfing Nimbleness,Natural Stealthy,,
-Stout Halfing,,2,1,,,,No,25,Halfing,Lucky,Brave,Halfing Nimbleness,Stout Resilence,,
-High Elf,,2,,1,,,Yes,30,Elvish,Keen Senses,Fey Ancestry,Trance,Elf Weapon Training,Cantrip,Extra Language
-Wood Elf,,2,,,1,,Yes,35,Elvish,Keen Senses,Fey Ancestry,Trance,Elf Weapon Training,Fleet of Foot,Mask of the Wild
-Hill Dawf,,,2,,,,Yes,25,Dwarvish,Dwarven Resilience,Dwarven Combat Training,Tool Proficiency,Stonecunning,Dwarven Toughness,
-Mountain Dawf,,,2,,,,Yes,25,Dwarvish,Dwarven Resilience,Dwarven Combat Training,Tool Proficiency,Stonecunning,Dwarven Armor Training,
+Variant Human,0,0,0,0,0,0,No,30,Other,Skills,Feat,,,,
+Lightfoot Halfing,0,2,0,0,0,1,No,25,Halfing,Lucky,Brave,Halfing Nimbleness,Natural Stealthy,,
+Stout Halfing,0,2,1,0,0,0,No,25,Halfing,Lucky,Brave,Halfing Nimbleness,Stout Resilence,,
+High Elf,0,2,0,1,0,0,Yes,30,Elvish,Keen Senses,Fey Ancestry,Trance,Elf Weapon Training,Cantrip,Extra Language
+Wood Elf,0,2,0,0,1,0,Yes,35,Elvish,Keen Senses,Fey Ancestry,Trance,Elf Weapon Training,Fleet of Foot,Mask of the Wild
+Hill Dawf,0,0,2,0,1,0,Yes,25,Dwarvish,Dwarven Resilience,Dwarven Combat Training,Tool Proficiency,Stonecunning,Dwarven Toughness,
+Mountain Dawf,2,0,2,0,0,0,Yes,25,Dwarvish,Dwarven Resilience,Dwarven Combat Training,Tool Proficiency,Stonecunning,Dwarven Armor Training,
