@@ -1,6 +1,5 @@
 #Leads user to create a level 1 character for adventurer league play
 import csv
-import numpy as np
 #import Tkinter
 abilityScores = [8,10,12,13,14,15]#The value for ablity scores that are possible
 conScore = abilityScores[0]
