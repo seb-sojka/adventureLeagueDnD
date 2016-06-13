@@ -53,4 +53,9 @@ for i in range(10,abilityCount):
     if dataRaces["Ability " + str(count)][raceNumber] =='':
         break
     abilities.append(dataRaces["Ability " + str(count)][raceNumber])       
-abilitiesDescription = []
+abilitiesLongDescription = []
+abilitiesShortDescription = []
+print abilities
+for i in range(0,len(abilities)):
+    abilityNumber = dataAbilities('Ability').index(abilities[i])
+    abilitiesShortDescription.append(dataAbilities["Long Description"][abilityNumber])

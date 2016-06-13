@@ -1,6 +1,6 @@
 Race,Strength,Dexterity,Consitution,Intelligence,Wisdom,Charisma,Dark Vision,Speed,Language,Ability 1,Ability 2,Ability 3,Ability 4,Ability 5,Ability 6
 Normal Human,1,1,1,1,1,1,No,30,Other,,,,,,
-Variant Human,0,0,0,0,0,0,No,30,Other,Skills,Feat,,,,
+Variant Human,0,0,0,0,0,0,No,30,Other,Skills,Feat,Ability Score Increase,,,
 Lightfoot Halfing,0,2,0,0,0,1,No,25,Halfing,Lucky,Brave,Halfing Nimbleness,Natural Stealthy,,
 Stout Halfing,0,2,1,0,0,0,No,25,Halfing,Lucky,Brave,Halfing Nimbleness,Stout Resilence,,
 High Elf,0,2,0,1,0,0,Yes,30,Elvish,Keen Senses,Fey Ancestry,Trance,Elf Weapon Training,Cantrip,Extra Language
