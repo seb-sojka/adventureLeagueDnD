@@ -29,9 +29,20 @@ with open("Abilities.csv") as csvRace:
                 dataAbilities[header].append(value)
             except KeyError:
                 dataAbilities[header]=[value]
-abilityCount = len(dataRaces)
+with open("classes.csv") as csvRace:
+    reader = csv.DictReader(csvRace)
+    dataClasses = {}
+    for row in reader:
+        for header, value in row.items():
+            try:
+                dataClasses[header].append(value)
+            except KeyError:
+                dataClasses[header]=[value]
+raceAbilityCount = len(dataRaces)
+classAbilityCount = len(dataClasses)
 raceCount = len(dataRaces['Race'])
 raceNumber = dataRaces['Race'].index(playerRace)
+classNumber = dataClasses['Class'].index(playerClass)
 strScore= strScore+int(dataRaces['Strength'][raceNumber])
 conScore= conScore+int(dataRaces['Consitution'][raceNumber])
 dexScore= dexScore+int(dataRaces['Dexterity'][raceNumber])
@@ -44,18 +55,26 @@ dexMod = int((dexScore-10)/2)
 intMod = int((intScore-10)/2)
 wisMod = int((wisScore-10)/2)
 strMod = int((wisScore-10)/2)
+hitDie = dataClasses['Hit Die'][classNumber]
 languages = []
 languages.append(dataRaces['Language'][raceNumber])
 abilities = []
-count = 0
-for i in range(10,abilityCount):
-    count = count + 1
+count = 1
+for i in range(10,raceAbilityCount):
     if dataRaces["Ability " + str(count)][raceNumber] =='':
         break
     abilities.append(dataRaces["Ability " + str(count)][raceNumber])       
+    count = count + 1
+count = 1
+for i in range(9,classAbilityCount):
+    if dataClasses["Ability " + str(count)][classNumber] =='':
+        break
+    abilities.append(dataClasses["Ability " + str(count)][classNumber])       
+    count = count + 1
 abilitiesLongDescription = []
 abilitiesShortDescription = []
-print abilities
 for i in range(0,len(abilities)):
-    abilityNumber = dataAbilities('Ability').index(abilities[i])
-    abilitiesShortDescription.append(dataAbilities["Long Description"][abilityNumber])
+    abilityNumber = dataAbilities['Ability'].index(abilities[i])
+    abilitiesShortDescription.append(dataAbilities["Short Description"][abilityNumber])
+    abilitiesLongDescription.append(dataAbilities["Long Description"][abilityNumber])
+    print abilities[i] + ": " + abilitiesShortDescription[i] + ", " + abilitiesLongDescription[i]
