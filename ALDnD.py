@@ -8,7 +8,7 @@ dexScore = abilityScores[2]
 intScore = abilityScores[3]
 wisScore = abilityScores[4]
 chaScore = abilityScores[5]
-playerRace = "Variant Human"
+playerRace = "Lightfoot Halfing"
 playerClass = "Fighter"
 with open("Races.csv") as csvRace:
     reader = csv.DictReader(csvRace)
@@ -76,4 +76,3 @@ for i in range(0,len(abilities)):
     abilityNumber = dataAbilities['Ability'].index(abilities[i])
     abilitiesShortDescription.append(dataAbilities["Short Description"][abilityNumber])
     abilitiesLongDescription.append(dataAbilities["Long Description"][abilityNumber])
-    print abilities[i] + ": " + abilitiesShortDescription[i] + ", " + abilitiesLongDescription[i]
